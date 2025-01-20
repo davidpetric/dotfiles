@@ -4,15 +4,7 @@ local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
 config.default_prog = { 'pwsh.exe', '-NoLogo' }
-table.insert(launch_menu, {
-  label = 'PowerShell',
-  args = { 'powershell.exe', '-NoLogo' },
-})
 
-table.insert(launch_menu, {
-  label = 'Pwsh',
-  args = { 'pwsh.exe', '-NoLogo' },
-})
 
 config.color_scheme = 'Tokyo Night'
 config.font = wezterm.font("CaskaydiaCove NF")
